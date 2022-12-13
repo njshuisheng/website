@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>官网</title>
+        <meta id="description" name="description" content="英国希斯曼乐器国际集团有限公司并入英国希斯曼乐器国际集团有限公司旗下，成为希斯曼乐器国际集团中最高端的钢琴品牌，结合希斯曼乐技术，使贝蒂克莱泊钢琴在音色上面得到了更大的提升，直到今天，是名副其实的顶级钢琴品牌。"/>
+        <meta id="keywords" name="keywords" content="英国希斯曼乐器国际集团有限公司,钢琴"/>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+        <link href="./css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="./css/hero-slider.css"/>
+        <link rel="stylesheet" href="./css/tooplate-style.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/customer.css"/>
+        <!--[if IE 6]><script type="text/javascript" src="/js/PNG.js"></script><![endif]-->
+        <script src="./js/jquery-1.11.2.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/plugins.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="http://tyw.key.400301.com/js/replace_word_limit.js"></script>
+        <script type="text/javascript" language="javascript">
+            //①搜索开始
+            function checkSearch() {
+                if ($("#KeyName").val() == "" || $("#KeyName").val() == null) {
+                    alert("请输入搜索关键词");
+                    $("#KeyName").val("");
+                    $("#KeyName").focus();
+                    return false;
+                }
+                var Search_url = $("#key-Search").attr("value");
+                window.location.href = Search_url + "?q=" + escape($("#KeyName").val());
+            }
+
+            //②按下回车键出发某个按钮开始
+            document.onkeydown = function(event) {
+                e = event ? event : (window.event ? window.event : null);
+                if (e.keyCode == 13) {
+                    document.getElementById("SearchButton").click();
+                    return false;
+                }
+            }
+
+            //③加入收藏js代码开始
+            function AddFavorite(sURL, sTitle) {
+                try {
+                    window.external.addFavorite(sURL, sTitle);
+                } catch (e) {
+                    try {
+                        window.sidebar.addPanel(sTitle, sURL, "");
+                    } catch (e) {
+                        alert("您使用的浏览器不支持此功能，请按“Ctrl+D”键手工加入收藏");
+                    }
+                }
+            }
+        </script>
+        <!--④设置网站背景开始-->
+        <!--④结束-->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <div id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                        <a href="#" class="navbar-brand scroll-top">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                    <div id="main-nav" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="hidden-md hidden-sm">
+                                <a href="http://13236.alyseo10.demo3w.com/">
+                                    <span>首页</span>
+                                    <font>Home</font>
+                                </a>
+                            </li>
+                            <li class="hidden-md hidden-sm">
+                                <a href="/html/about/2/">
+                                    <span>品牌故事</span>
+                                    <font>Baity Craib Story</font>
+                                </a>
+                            </li>
+                            <li class="hidden-md hidden-sm">
+                                <a href="/html/product/6/">
+                                    <span>进口钢琴</span>
+                                    <font>Imported piano</font>
+                                </a>
+                            </li>
+                            <li class="hidden-md hidden-sm">
+                                <a href="/html/product/1/">
+                                    <span>三角钢琴</span>
+                                    <font>Grand piano</font>
+                                </a>
+                            </li>
+                            <li class="hidden-md hidden-sm">
+                                <a href="/html/product/5/">
+                                    <span>立式钢琴</span>
+                                    <font>Upright piano</font>
+                                </a>
+                            </li>
+                            <li role="presentation" class="dropdown">
+                                <a href="/html/contact/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span>联系我们</span>
+                                    <font>Contact Us</font>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/html/message/">在线留言</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown">
+                                <a href="/html/news/10/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span>新闻资讯</span>
+                                    <font></font>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/html/piclist/29/">图片管理</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./upload/img/20210301154644.jpg" class="first-slide img img-responsive hidden-xs">
+                    <a class="hidden-lg hidden-sm hidden-md" href="">
+                        <img src="./upload/img/20210301154644.jpg" class="first-slide img img-responsive hidden-lg hidden-sm hidden-md">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="visible-lg">
+                                <a class="btn btn-md btn-danger2" href="">了解更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./upload/img/20210301154528.jpg" class="first-slide img img-responsive hidden-xs">
+                    <a class="hidden-lg hidden-sm hidden-md" href="">
+                        <img src="./upload/img/20210301154528.jpg" class="first-slide img img-responsive hidden-lg hidden-sm hidden-md">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="visible-lg">
+                                <a class="btn btn-md btn-danger2" href="">了解更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./upload/img/20210127095219.jpg" class="first-slide img img-responsive hidden-xs">
+                    <a class="hidden-lg hidden-sm hidden-md" href="">
+                        <img src="./upload/img/20210127095219.jpg" class="first-slide img img-responsive hidden-lg hidden-sm hidden-md">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="visible-lg">
+                                <a class="btn btn-md btn-danger2" href="">了解更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./upload/img/20210127095118.jpg" class="first-slide img img-responsive hidden-xs">
+                    <a class="hidden-lg hidden-sm hidden-md" href="">
+                        <img src="./upload/img/20210127095118.jpg" class="first-slide img img-responsive hidden-lg hidden-sm hidden-md">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="visible-lg">
+                                <a class="btn btn-md btn-danger2" href="">了解更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./upload/img/20210127090823.jpg" class="first-slide img img-responsive hidden-xs">
+                    <a class="hidden-lg hidden-sm hidden-md" href="">
+                        <img src="./upload/img/20210127090823.jpg" class="first-slide img img-responsive hidden-lg hidden-sm hidden-md">
+                    </a>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="visible-lg">
+                                <a class="btn btn-md btn-danger2" href="">了解更多</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="onpure_bg">
+                    <h4 class="onpure">
+                        <span class="onpure_title">购琴工具</span>
+                    </h4>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="col-xs-12 pur-tools">
+                <a href="/html/about/2/" class="text-dark">
+                    <div class="col-xs-6 col-lg-3 text-center">
+                        <i class="fa fa-3x">
+                            <img src="./upload/20210127165741.png" onmouseover='src="/upload/202101280932492.png"' onmouseout='src="/upload/20210127165741.png"' style="margin: 0 auto;">
+                        </i>
+                        <h4 class="text-center">
+                            <b>品牌故事</b>
+                        </h4>
+                        <hr>
+                        <h5 class="text-center"></h5>
+                    </div>
+                </a>
+                <a href="/html/about/27/" class="text-dark">
+                    <div class="col-xs-6 col-lg-3 text-center">
+                        <i class="fa fa-3x">
+                            <img src="./upload/20210127165816.png" onmouseover='src="/upload/20210127165816.png"' onmouseout='src="/upload/20210127165816.png"' style="margin: 0 auto;">
+                        </i>
+                        <h4 class="text-center">
+                            <b>创始人</b>
+                        </h4>
+                        <hr>
+                        <h5 class="text-center"></h5>
+                    </div>
+                </a>
+                <a href="/html/product/1/" class="text-dark">
+                    <div class="col-xs-6 col-lg-3 text-center">
+                        <i class="fa fa-3x">
+                            <img src="./upload/20210127165822.png" onmouseover='src="/upload/202101280933022.png"' onmouseout='src="/upload/20210127165822.png"' style="margin: 0 auto;">
+                        </i>
+                        <h4 class="text-center">
+                            <b>三角钢琴</b>
+                        </h4>
+                        <hr>
+                        <h5 class="text-center"></h5>
+                    </div>
+                </a>
+                <a href="/html/product/5/" class="text-dark">
+                    <div class="col-xs-6 col-lg-3 text-center">
+                        <i class="fa fa-3x">
+                            <img src="./upload/20210128102130.png" onmouseover='src="/upload/202101281022062.png"' onmouseout='src="/upload/20210128102130.png"' style="margin: 0 auto;">
+                        </i>
+                        <h4 class="text-center">
+                            <b>立式钢琴</b>
+                        </h4>
+                        <hr>
+                        <h5 class="text-center"></h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-12 bg-grey">
+            <div class="container">
+                <div class="newsmain">
+                    <div class="newstitle">
+                        <h4>新闻资讯</h4>
+                        <p></p>
+                    </div>
+                    <ul>
+                        <li class="one">
+                            <a href="/html/news/10/">
+                                <img class="img img-responsive" src="/upload/img/20210416115805.jpg">
+                                <div class="news-title">
+                                    <h5>新闻资讯</h5>
+                                    <p></p>
+                                    <i class="fa fa-chevron-circle-right fa-2x"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="two">
+                            <img class="img img-responsive" src="./upload/default.jpg">
+                            <a href="/html/news/d/43.html">
+                                <div class="top">
+                                    <h5>贝蒂克莱泊钢琴—钢琴家系列</h5>
+                                    <div class="p">
+                                        <p>本网2月5日讯 又一个世界级的钢琴品牌进入中国市场，贝蒂克莱泊钢琴遵循着欧洲制琴工艺，将在中国市场绽放放他的光芒，也让更多钢琴爱好者感受到欧洲钢琴的魅力。下面我们来一起了解一下，这个英国钢琴品牌的历史和他的工艺。</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h3>17</h3>
+                                    <span>2021.00</span>
+                                    <i class="fa fa-chevron-circle-right"></i>
+                                </div>
+                            </a>
+                            <img class="img img-responsive" src="/upload/default.jpg">
+                            <a href="/html/news/d/42.html">
+                                <div class="top">
+                                    <h5>百度百科-贝蒂克莱泊</h5>
+                                    <div class="p">
+                                        <p>工艺配置
+
+独立组装
+
+击弦机部件由专家技师逐一手工检测，以确保部件安装零误差，使演奏家在弹奏曲目时通过击键反馈更好的演绎曲目。
+
+乌木黑键
+
+钢琴琴键采用乌木制造</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <h3>15</h3>
+                                    <span>2021.00</span>
+                                    <i class="fa fa-chevron-circle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="three">
+                            <a href="/html/news/d/41.html">
+                                <div class="left">
+                                    <h3>13</h3>
+                                    <span>2021.00</span>
+                                </div>
+                                <div class="right">
+                                    <h5>百年传承—贝蒂克莱泊钢琴</h5>
+                                    <div class="p">
+                                        <p>来自英国具有百年历史的贝蒂克莱泊钢琴将于2017年进军中国市场，追求极致音色与品质的贝蒂克莱泊钢琴，根据客户的艺术诉求打造最适合客户的钢琴，追求每一道工艺，在艺术的创造以及艺术的极致追求上，都要求达到无以复加的地步。</p>
+                                    </div>
+                                    <i class="fa fa-chevron-circle-right"></i>
+                                </div>
+                            </a>
+                            <a href="/html/news/d/40.html">
+                                <div class="left">
+                                    <h3>12</h3>
+                                    <span>2021.00</span>
+                                </div>
+                                <div class="right">
+                                    <h5>世界十大名琴之贝蒂克莱泊 BAITY CRAIB</h5>
+                                    <div class="p">
+                                        <p>又一个世界级的钢琴品牌进入中国市场，贝蒂克莱泊钢琴遵循着欧洲制琴工艺，将在中国市场绽放放他的光芒，也让更多钢琴爱好者感受到欧洲钢琴的魅力。下面我们来一起了解一下，这个英国钢琴品牌的历史和他的工艺。</p>
+                                    </div>
+                                    <i class="fa fa-chevron-circle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <link rel="stylesheet" type="text/css" href="./css/kefu.css">
+        <div class="scrollsidebar" id="scrollsidebar">
+            <div class="side_content">
+                <div class="side_list">
+                    <div class="side_title">
+                        <div class="titlet">联系我们</div>
+                        <a title="隐藏" class="close_btn">
+                            <span>关闭</span>
+                        </a>
+                    </div>
+                    <div class="side_center">
+                        <div class="custom_service">
+                            <p>
+                                <a title="点击这里给我发消息" href="http://wpa.qq.com/msgrd?v=3&uin=00000000&Site=qq&Menu=yes" target="_blank">
+                                    <img src="http://wpa.qq.com/pa?p=2:8983659:41">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="other">
+                            <p>
+                                <img src="./upload/img/20210908103719.png" width="120"/>
+                            </p>
+                            <p>客户服务热线</p>
+                            <p>400-855-8870</p>
+                        </div>
+                        <div class="msgserver">
+                            <p>
+                                <a href="/html/contact/">联系我们</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="side_bottom"></div>
+                </div>
+            </div>
+            <div class="show_btn">
+                <div class="show_title">
+                    <p style="color: white; line-height: 18px; font-size: 14px; text-align: center;">在线客服</p>
+                </div>
+                <span>在线客服</span>
+            </div>
+        </div>
+        <script type="text/javascript" src="/js/kefu.js"></script>
+        <div id="footerDiv" style="background: url(/upload/img/20210127134104.jpg); padding-bottom: background-repeat: no-repeat; background-size: cover;">
+            <section id="footer" class="container dark group" style="background: none">
+                <div class="row" style="padding-top: 31px;">
+                    <div class="column column_container col-sm-12">
+                        <div class="column-inner ">
+                            <div class="wrapper">
+                                <div class="row inner row-fluid ">
+                                    <div class="column column_container col-lg-12 col-sm-12 center-block">
+                                        <div class="column-inner ">
+                                            <div class="wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="" style="text-align: center;">
+                                                        <h3>
+                                                            <img src="./upload/img/20210821155143.png" style="width: 186px;">
+                                                        </h3>
+                                                        <ul style="list-style: none; width: 286px; display: inline-block; padding-left: 0;">
+                                                            <li style="line-height: 24px;">
+                                                                <span style="font-size: 12pt; color: #c5c5c5;">官方热线: 400-855-8870</span>
+                                                            </li>
+                                                            <li style="line-height: 24px;">
+                                                                <span style="font-size: 12pt; color: #c5c5c5;">客服邮件: baitycraib@163.com</span>
+                                                            </li>
+                                                            <li style="line-height: 24px;">
+                                                                <span style="font-size: 12pt; color: #c5c5c5;">地 址: 英国伦敦威林威斯特摩兰75号</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="" class="container" style="width: 100%; min-height: 65px;">
+                                    <div class="row">
+                                        <div id="beian" style="text-align: center;">
+                                            <p style="color: #c5c5c5; font-size: 14px; margin-bottom: 0px;">
+                                                <span style="font-family: Arial, Helvetica, sans-serif;">
+                                                    Copyright &nbsp;&nbsp;&copy;&nbsp;&nbsp;2021-<script type="text/javascript">
+                                                        var myDate = new Date();
+                                                        document.write(myDate.getFullYear());
+                                                    </script>
+                                                </span>
+                                                &nbsp;英国希斯曼乐器国际集团有限公司All Rights Reserved
+                                    
+                                            </p>
+                                            <p>
+                                                <a href="https://www.400301.com/" title="腾云建站仅向商家提供技术服务" target="_blank">腾云建站仅向商家提供技术服务</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div id="wxQrcodeMobile" style="width: 100%; text-align: center; display: none;">
+                                        <img src="./upload/img/20210908103719.png" id="qrcode" style="width: 150px;">
+                                    </div>
+                                    <div id="beian" class="text-left col-md-6 hidden-lg hidden-md hidden-sm" style="padding-left: 60px;">
+                                        <p style="color: #c5c5c5; font-size: 12px; margin-bottom: 0px;">
+                                            Copyright &nbsp;&nbsp;&copy;&nbsp;&nbsp;2021-<script type="text/javascript">
+                                                var myDate = new Date();
+                                                document.write(myDate.getFullYear());
+                                            </script>
+</span>&nbsp;英国希斯曼乐器国际集团有限公司All Rights Reserved
+                                </p></div></div></div></div></div></div></section></div><script type="text/javascript" src="/js/myJs.js"></script>
+<style>
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+        margin-bottom: 35px;
+    }
+</style>
+</body>
+</html>
