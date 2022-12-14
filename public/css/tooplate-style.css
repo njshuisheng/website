@@ -132,6 +132,7 @@ p {
 .navbar-brand .logo{
 	margin-top: 0px;
 	background: url(../images/white_logo.png);
+	background-size: 100% 90%;
 	display: inline-block;
 	width: 240px;
 	height: 75px;
@@ -140,6 +141,7 @@ p {
 .header.active .navbar-brand .logo{
 	margin-top: 0px;
 	background: url(../images/black_logo.png);
+	background-size: 100% 90%;
 	display: inline-block;
 	width: 240px;
 	height: 66px;
@@ -171,7 +173,6 @@ p {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background-color: #666;
 }
-bootstrap.min.css:5
 .navbar-toggle {
     position: relative;
     float: right;
