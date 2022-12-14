@@ -139,7 +139,7 @@
 }
 .bg-grey {
 	background-color: #f3f3f3;
-	padding:50px 0;
+	padding:30px 0;
 }
 .bg-grey2 {
 	background-color: #F8F8F8
@@ -175,6 +175,9 @@
 	background-color: #F1E9DF
 }
 /*div顶距*/
+.padding-top-xs {
+	padding-top: 20px;
+}
 .padding-xs {
 	padding-top: 20px;
 	padding-bottom: 20px
@@ -1045,11 +1048,9 @@ to {
 
 @media screen and (min-width: 767px) {
 .newsmain {
-	max-width: 1340px;
 	margin: 0 auto;
 }
 .newsmain .newstitle {
-	margin-bottom: 40px;
 	text-align: center;
 }
 .newsmain .newstitle h4 {
@@ -1391,7 +1392,6 @@ to {
 }
  @media screen and (max-width: 767px) {
 .newsmain {
-	max-width: 1340px;
 	margin: 0 auto;
 }
 .newsmain .newstitle {
