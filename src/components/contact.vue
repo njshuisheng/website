@@ -22,5 +22,45 @@
         </div>
       </div>
     </div>
+    <div class="update_message2">
+      <dl>
+        <dt>
+          <img src="/images/message_tel.jpg" />
+          <div class="pub-shadow"></div>
+          <div class="update_message2_desc">
+            <span>售后专线</span>
+            <strong>
+              <a>400-6633-365</a>
+            </strong>
+          </div>
+        </dt>
+      </dl>
+      <div style="width: 100%; margin: 0 auto; display: flex; justify-content:center;flex-wrap: wrap;">
+        <div class="col-lg-4">
+          <img src="/images/erweima.jpg" alt="" />
+        </div>
+        <div class="col-lg-4">
+          <img src="/images/erweima1.png" alt="" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script setup>
+import axios from '../api'
+import { onMounted, ref } from 'vue'
+const product = ref([])
+
+function onInitData() {
+  axios.post('/xkgw/qt/getInformationBybutton', { type: 4 }).then((res) => {
+    if (res.retCode === 0) {
+      product.value = res.data.products
+      console.log(res)
+    }
+  })
+}
+
+onMounted(() => {
+  onInitData()
+})
+</script>

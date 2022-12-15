@@ -1045,10 +1045,15 @@ to {
 /*首页钢琴分类导航*/
 
 /*首页新闻列表布局*/
-
+.newsmain .news-text {
+	text-decoration: none;
+}
 @media screen and (min-width: 767px) {
 .newsmain {
 	margin: 0 auto;
+}
+.newsmain .modileTitle {
+	display: none;
 }
 .newsmain .newstitle {
 	text-align: center;
@@ -1085,15 +1090,10 @@ to {
 	font-size: 16px;
 	color: #999;
 }
-.newsmain ul li {
-	float: left;
-}
 .newsmain ul li.one {
-	width: 33%;
 	margin-right: 10px;
 }
 .newsmain ul li.one a {
-	max-width: 440px;
 	height: 530px;
 	overflow: hidden;
 	display: block;
@@ -1394,6 +1394,11 @@ to {
 .newsmain {
 	margin: 0 auto;
 }
+.newsmain .modileTitle {
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+}
 .newsmain .newstitle {
 	display: none;
 	margin-bottom: 40px;
@@ -1441,7 +1446,6 @@ to {
 }
 .newsmain ul li.one a {
 	width: 100%;
-	height: 438px;
 	overflow: hidden;
 	display: block;
 	position: relative;
