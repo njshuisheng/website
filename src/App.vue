@@ -264,19 +264,19 @@ function onLocation() {
 }
 
 function onInitData() {
-  axios.post('/xkgw/qt/getInformationBybutton', { type: 1 }).then((res) => {
+  axios.post('/xkgw/qt/getInformationBybutton', { key: 1 }).then((res) => {
     if (res.retCode === 0) {
       banner.value = res.data.topImages
       partner.value = res.data.topLogos
       video.value = res.data.topVideos[0] || {}
     }
   })
-  axios.post('/xkgw/qt/getInformationBybutton', { type: 2 }).then((res) => {
+  axios.post('/xkgw/qt/getInformationBybutton', { key: 2 }).then((res) => {
     if (res.retCode === 0) {
       news.value = res.data.news
     }
   })
-  axios.post('/xkgw/qt/getInformationBybutton', { type: 6 }).then((res) => {
+  axios.post('/xkgw/qt/getInformationBybutton', { key: 6 }).then((res) => {
     if (res.retCode === 0) {
       intro.value = res.data.intro
     }

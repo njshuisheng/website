@@ -58,7 +58,7 @@ function onDetails(tmp) {
 
 
 function onInitData() {
-  axios.post('/xkgw/qt/getInformationBybutton', { type: 3 }).then((res) => {
+  axios.post('/xkgw/qt/getInformationBybutton', { key: 3 }).then((res) => {
     if (res.retCode === 0) {
       product.value = res.data.products
     }
